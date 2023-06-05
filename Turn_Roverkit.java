@@ -9,23 +9,27 @@ public class Turn_Roverkit
 
     public static void main(String[] args) throws Exception 
     {
-    	
-    		//Connect to wireless rover
-    		Net.addServer("", "192.168.100.1", 5661, "", 0);
+    	//Establishes a scanner
+		Scanner Input = new Scanner(System.in);
+        System.out.println("What task would you like to perform? ( Original(0), task (1), task (2) )")
+        int in = Input.nextInt();
+            
+    	//Connect to wireless rover
+    	Net.addServer("", "192.168.100.1", 5661, "", 0);
 
-    		//Create
-    		DCMotor leftMotors = new DCMotor();
-    		DCMotor rightMotors = new DCMotor();
+    	//Create
+    	DCMotor leftMotors = new DCMotor();
+    	DCMotor rightMotors = new DCMotor();
 
-    	
-    		//Address
-    		leftMotors.setChannel(0);
-    		rightMotors.setChannel(1);
+    	//Address
+    	leftMotors.setChannel(0);
+    	rightMotors.setChannel(1);
 
-    		//Open
-        	leftMotors.open(5000);
-        	rightMotors.open(5000);
+    	//Open
+        leftMotors.open(5000);
+        rightMotors.open(5000);
         	
+        if(in == 0)
         {
         	//Turn in one direction
         	leftMotors.setTargetVelocity(1);
@@ -40,6 +44,7 @@ public class Turn_Roverkit
     	}
     	
     	//Task 1
+        else if(in == 1)
     	{
         	//Turn in one direction
         	leftMotors.setTargetVelocity(-1);
@@ -53,7 +58,9 @@ public class Turn_Roverkit
         	rightMotors.setTargetVelocity(0);
     	}
     	
+        
     	//Task 2
+        else
     	{
     		//Forward
         	leftMotors.setTargetVelocity(1);
