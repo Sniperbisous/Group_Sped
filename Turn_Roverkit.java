@@ -10,7 +10,7 @@ public class Turn_Roverkit
     public static void main(String[] args) throws Exception 
     {
     	//Establishes a scanner
-		Scanner Input = new Scanner(System.in);
+	Scanner Input = new Scanner(System.in);
         System.out.println("What task would you like to perform? ( Original(0), task (1), task (2) )")
         int in = Input.nextInt();
             
