@@ -1,0 +1,3 @@
+Rover Stats:
+
+average 1.323 repeating seconds per m (100% speed)
