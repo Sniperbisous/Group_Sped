@@ -5,3 +5,4 @@ average 1.323 repeating seconds per m (100% speed)
 
 max speed: 0.75566750629 m/sec (30% = 0.22670025188 m/sec)
 turns 180 degrees in 2.6 sec at 0.3 power.
+turns 180 degrees in 0.78 sec at max power
