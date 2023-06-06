@@ -27,9 +27,10 @@ public class PhidgetsRover_Move1 {
         //Wait for 1 seconds
         Thread.sleep(2000);
 
-        //Stop motors
+       //Stop motors
         leftMotors.setTargetVelocity(0);
         rightMotors.setTargetVelocity(0);
+    
     }
 }
   
