@@ -1,4 +1,4 @@
-package Phidgetsrover;
+
 //Add Phidgets Library
 import com.phidget22.*;
 
