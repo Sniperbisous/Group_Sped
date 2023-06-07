@@ -5,7 +5,7 @@ import java.util.Scanner;
 //Add Phidgets Library
 import com.phidget22.*;
 
-public class Avoid_Obsticals 
+public class Avoid_Obstacles
 {
     public static void main(String[] args) throws Exception 
     {
@@ -164,9 +164,7 @@ public class Avoid_Obsticals
         	}
         }
 
-        //Stop
-        leftMotors.setTargetVelocity(0.0);
-		rightMotors.setTargetVelocity(0.0);
+       
     }
 }
   
