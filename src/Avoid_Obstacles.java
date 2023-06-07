@@ -1,4 +1,3 @@
-package Phidgetsrover;
 
 import java.util.Scanner;
 
