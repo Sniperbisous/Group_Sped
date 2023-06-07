@@ -1,3 +1,4 @@
+package Phidgetsrover;
 
 import java.util.Scanner;
 //Add Phidgets Library
@@ -53,8 +54,8 @@ public class Challenge
     		else 
     		{
     			//Move forward at full speed (100% max speed)
-    			leftMotors.setTargetVelocity(0.3);
-    			rightMotors.setTargetVelocity(0.3);
+    			leftMotors.setTargetVelocity(1);
+    			rightMotors.setTargetVelocity(1);
     			
     			if(u == 1323)
     			{
@@ -78,16 +79,13 @@ public class Challenge
         				rightMotors.setTargetVelocity(-1);
             		}
         			//Wait for  0.39 second
-            		
-            		u = 0;
+            		Thread.sleep(390);
     			}
     			else
     			{
-    				Thread.sleep(1000);
-    				u += 441;
+    				u += 1;
     				//Wait for 0.001 second
-            		//Thread.sleep(1);
-    				System.out.println(u);
+            		Thread.sleep(1);
     			}
     			
     		}

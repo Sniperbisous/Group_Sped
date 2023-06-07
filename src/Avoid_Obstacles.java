@@ -1,11 +1,11 @@
-
+package Phidgetsrover;
 
 import java.util.Scanner;
 
 //Add Phidgets Library
 import com.phidget22.*;
 
-public class Avoid_Obstacles 
+public class Avoid_Obsticals 
 {
     public static void main(String[] args) throws Exception 
     {
@@ -72,9 +72,9 @@ public class Avoid_Obstacles
             
         		else 
         		{
-        			//Move forward slowly (30% max speed)
-        			leftMotors.setTargetVelocity(0.30);
-        			rightMotors.setTargetVelocity(0.30);
+        			//Move forward slowly (25% max speed)
+        			leftMotors.setTargetVelocity(0.50);
+        			rightMotors.setTargetVelocity(0.50);
         		}
 
         		//Wait for 250 milliseconds
@@ -144,8 +144,8 @@ public class Avoid_Obstacles
         			leftMotors.setTargetVelocity(0.30);
         			rightMotors.setTargetVelocity(-0.30);
         			
-        			//Wait for 1.25 second
-            		Thread.sleep(1250);
+        			//Wait for 1.3 second
+            		Thread.sleep(1300);
             		
             		//continue forward
             		leftMotors.setTargetVelocity(0.5);
@@ -162,12 +162,11 @@ public class Avoid_Obstacles
         		//Wait for 100 milliseconds
         		Thread.sleep(100);
         	}
-        	
         }
-        
+
         //Stop
-        //leftMotors.setTargetVelocity(0.0);
-		//rightMotors.setTargetVelocity(0.0);
+        leftMotors.setTargetVelocity(0.0);
+		rightMotors.setTargetVelocity(0.0);
     }
 }
   

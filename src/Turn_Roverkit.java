@@ -1,7 +1,8 @@
+package Phidgetsrover;
 
 //Add Phidgets Library
 import com.phidget22.*;
-import java.util.Scanner; 
+
 
 public class Turn_Roverkit 
 {
@@ -10,7 +11,7 @@ public class Turn_Roverkit
     {
     	//Establishes a scanner
 	Scanner Input = new Scanner(System.in);
-        System.out.println("What task would you like to perform? ( Original(0), task (1), task (2) )");
+        System.out.println("What task would you like to perform? ( Original(0), task (1), task (2) )")
         int in = Input.nextInt();
             
     	//Connect to wireless rover
@@ -28,7 +29,6 @@ public class Turn_Roverkit
         leftMotors.open(5000);
         rightMotors.open(5000);
         	
-        // (360)
         if(in == 0)
         {
         	//Turn in one direction
@@ -43,7 +43,7 @@ public class Turn_Roverkit
         	rightMotors.setTargetVelocity(0);
     	}
     	
-    	//Task 1 (-360)
+    	//Task 1
         else if(in == 1)
     	{
         	//Turn in one direction
@@ -59,7 +59,7 @@ public class Turn_Roverkit
     	}
     	
         
-    	//Task 2 (move forward, 180, then back)
+    	//Task 2
         else
     	{
     		//Forward
