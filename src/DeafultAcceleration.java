@@ -2,7 +2,7 @@
 //Add Phidgets Library
 import com.phidget22.*;
 
-public class DeafultAcceleration {
+public class DefaultAcceleration {
   public static void main(String[] args) throws Exception {
 
       //Connect to wireless rover
